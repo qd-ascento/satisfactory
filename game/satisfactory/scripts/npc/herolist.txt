@@ -1,0 +1,6 @@
+"CustomHeroList"
+{
+		
+
+		"npc_dota_hero_wisp"						"1"
+}

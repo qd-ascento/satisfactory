@@ -1,0 +1,160 @@
+
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+"build_stone_mine"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		//"ID"					"5147"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/wisp/build_stone_mine.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"sounds/abilities/stone_mine.wav"
+		"AbilityTextureName"			"wisp/stone_mine"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"5"
+   		"AbilityCastAnimation"			"ACT_INVALID"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"100"
+		//"AbilityDuration"				"40.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spawn_count"			"1"
+			}
+		}
+
+	}
+
+	"build_iron_mine"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		//"ID"					"5147"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"heroes/wisp/build_iron_mine.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilitySound"					"sounds/abilities/stone_mine.wav"
+		"AbilityTextureName"			"wisp/iron_mine"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"5"
+   		"AbilityCastAnimation"			"ACT_INVALID"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"100"
+		//"AbilityDuration"				"40.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spawn_count"			"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"beton"			"20"
+			}
+		}
+
+	}
+
+
+
+//stone_mining
+"ore_mining"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"items/items_shards.lua"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"AbilityTextureName"			"wisp/mine"
+
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"5"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0"
+
+	"AbilityCastRange"				"0"
+	"MaxLevel"						"1"
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"produce"          "1"
+		}
+				"02"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"time"          "5"
+		}
+	}
+}
+
+"auto_sell"
+{
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"heroes/wisp/auto_sell.lua"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"AbilityTextureName"			"wisp/bounty"
+
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"0"
+
+	"AbilityCastRange"				"0"
+	"MaxLevel"						"1"
+}
+
+}

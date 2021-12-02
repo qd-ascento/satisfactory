@@ -1,0 +1,171 @@
+
+"DOTAAbilities"
+{
+"item_recipe_blade_mail"					"REMOVED"
+"item_blade_mail"                 			"REMOVED"
+"item_recipe_helm_of_the_dominator"			"REMOVED"
+"item_helm_of_the_dominator" 				"REMOVED"
+"item_recipe_helm_of_the_overlord" 			"REMOVED"
+"item_helm_of_the_overlord" 				"REMOVED"
+"item_blink"								"REMOVED"
+"item_hand_of_midas"						"REMOVED"
+"item_force_staff"							"REMOVED"
+"item_recipe_force_staff"					"REMOVED"
+"item_recipe_hurricane_pike"				"REMOVED"
+"item_hurricane_pike"						"REMOVED"
+"item_shadow_amulet"						"REMOVED"
+"item_recipe_basher"						"REMOVED"
+"item_basher"								"REMOVED"
+"item_recipe_abyssal_blade"					"REMOVED"
+"item_abyssal_blade"						"REMOVED"
+"item_recipe_manta"							"REMOVED"
+"item_manta"								"REMOVED"
+"item_recipe_invis_sword"					"REMOVED"
+"item_invis_sword"							"REMOVED"
+"item_recipe_silver_edge"					"REMOVED"
+"item_silver_edge"							"REMOVED"	
+"item_super_blink"							"REMOVED"	
+"item_fallen_sky"							"REMOVED"	
+"item_overwhelming_blink"					"REMOVED"	
+"item_swift_blink"							"REMOVED"	
+"item_arcane_blink"							"REMOVED"	
+"item_recipe_arcane_blink"					"REMOVED"	
+"item_recipe_swift_blink"					"REMOVED"	
+"item_recipe_overwhelming_blink"			"REMOVED"
+"item_wind_waker"							"REMOVED"
+"item_recipe_wind_waker"					"REMOVED"
+"item_recipe_helm_of_the_dominator_2"		"REMOVED"
+"item_helm_of_the_dominator_2"				"REMOVED"
+"item_recipe_wraith_band"					"REMOVED"
+"item_recipe_bracer"						"REMOVED"
+"item_recipe_null_talisman"					"REMOVED"
+"item_smoke_of_deceit"						"REMOVED"
+"item_recipe_orchid"						"REMOVED"
+"item_orchid"								"REMOVED"
+"item_recipe_bloodthorn"					"REMOVED"
+"item_bloodthorn"							"REMOVED"
+"item_tome_of_knowledge"					"REMOVED"
+"item_sheepstick"							"REMOVED"
+"item_recipe_sheepstick"					"REMOVED"
+"item_gem"									"REMOVED"
+"item_desolator"							"REMOVED"
+
+
+	//=================================================================================================================
+	"item_stone_core"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1000"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"stone_mine"
+
+		"BaseClass"                     	"item_datadriven"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5"
+		"ItemQuality"					"common"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"0"
+		"ItemIsNeutralDrop"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"		
+
+		"ItemSellable"					"1"
+		"IsTempestDoubleClonable"		"0"
+
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemKillable"					"1"
+
+			"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"cost"          "5"
+		}
+
+	}
+
+	}
+
+
+		//=================================================================================================================
+	"item_iron_core"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1001"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"Model"							"models/props_gameplay/recipe.vmdl"
+		"AbilityTextureName"			"iron_mine"
+
+		"BaseClass"                     	"item_datadriven"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"10"
+		"ItemQuality"					"common"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"0"
+		"ItemIsNeutralDrop"				"0"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"SideShop"						"0"		
+
+		"ItemSellable"					"1"
+		"IsTempestDoubleClonable"		"0"
+
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+		"ItemKillable"					"1"
+
+			"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"              "FIELD_INTEGER"
+			"cost"          "10"
+		}
+
+	}
+
+	}
+
+
+
+
+	//=================================================================================================================
+	"item_beton"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"1003"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"	
+		"Model"							"models/props_gameplay/recipe.vmdl"
+
+		"BaseClass"                     	"item_datadriven"
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"30"
+		"ItemQuality"					"common"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ShouldBeSuggested"				"1"
+		
+		"ItemShopTags"					""
+		"ItemPurchasable"				"0"	
+		"ItemIsNeutralDrop"				"0"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"100"
+
+	}
+
+}

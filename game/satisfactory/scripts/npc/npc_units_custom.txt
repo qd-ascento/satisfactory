@@ -1,0 +1,307 @@
+
+// Units File
+"DOTAUnits"
+{
+	"Version"	"1"
+
+	"dota_fountain"
+	{	
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"		// Damage range min.
+		"AttackDamageMax"			"0"		// Damage range max.	
+		"AttackRate"				"0"			// Speed of attack.
+		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"		// Range within a target can be acquired.
+		"AttackRange"				"0"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.	
+
+	}
+
+	
+//models/props_gameplay/neutral_stash_rocks.vmdl
+"npc_stone_mine"
+  {
+    // General
+    //
+    "BaseClass"         "npc_dota_creature"  // Class of entity of link to.
+    "Model"           "models/stone_mine.vmdl"  // Model.
+		//"BaseClass"					"npc_dota_creep_neutral"
+
+		"SoundSet"					"n_creep_Melee"
+		"Level"						"1"
+		"ModelScale" 				"50"
+		"IsNeutralUnitType"			"0"
+    "UnitLabel"         "stone_mine"
+    
+    // Abilities
+    //----------------------------------------------------------------
+    
+    //"Ability1"          "exp_boss"     // Ability 1.
+    //"Ability2"          "exp_boss"      // Ability 2.
+    //"Ability3"          ""      // Ability 3.
+    //"Ability4"          ""      // Ability 4.
+    //"Ability5"          ""      // Ability 5.
+    //"Ability6"          ""      // Ability 6 - Extra.
+    //"Ability7"          ""      // Ability 7 - Extra.
+    //"Ability8"          ""      // Ability 8 - Extra.
+
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"       "10000"     // Physical protection.
+    "MagicalResistance"       "100"     // Magical protection.
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"     // Type of attack - melee, ranged, etc.
+    "AttackDamageMin"     "0"     // Damage range min.
+    "AttackDamageMax"     "0"     // Damage range max.
+    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"        "1"     // Speed of attack.
+    "AttackAnimationPoint"    "0.5"   // Normalized time in animation cycle to attack.
+    "AttackAcquisitionRange"  "800"   // Range within a target can be acquired.
+    "AttackRange"       "500"   // Range within a target can be attacked.
+    "ProjectileModel"     "" // Particle system model for projectile.
+    "ProjectileSpeed"     "900"   // Speed of projectile.
+    "StatusHealth"				"1000000"		// Base health.
+	  "StatusHealthRegen"			"1000"		// Health regeneration rate.
+
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyXP"          "0"     // Experience earn.
+    "BountyGoldMin"       "0"     // Gold earned min.
+    "BountyGoldMax"       "0"     // Gold earned max.
+
+
+    // Movement
+    //----------------------------------------------------------------
+
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_NONE"
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusMana"        "0"     // Base mana.
+    "StatusManaRegen"     "0"     // Mana regeneration rate.
+
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"          "DOTA_TEAM_BADGUYS"      // Team name.
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+    
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"    "500"   // Range of vision during day light.
+    "VisionNighttimeRange"    "500"   // Range of vision at night time.
+
+    // Bots
+    //----------------------------------------------------------------
+    "AttackDesire"        "1.5"   // How much bots want to attack them vs other non-hero things
+    
+  } 
+
+"npc_stone_mine_build1"
+  {
+    // General
+    //
+    "BaseClass"         "npc_dota_creature" // Class of entity of link to.
+    "Model"           "models/mine_cart.vmdl"  // Model.
+    //"BaseClass"         "npc_dota_creep_neutral"
+
+    "Level"           "1"
+    "ModelScale"        "50"
+
+    "SoundSet"          "Creep_Good_Melee"
+    "ModelScale"        "50"
+    "HealthBarOffset"     "250"
+    
+    // Abilities
+    //----------------------------------------------------------------
+    
+    "Ability1"          "stone_mining"     // Ability 1.
+    "Ability2"          "auto_sell"      // Ability 2.
+    "Ability3"          ""      // Ability 3.
+    "Ability4"          ""      // Ability 4.
+    "Ability5"          ""      // Ability 5.
+    "Ability6"          ""      // Ability 6 - Extra.
+    "Ability7"          ""      // Ability 7 - Extra.
+    "Ability8"          ""      // Ability 8 - Extra.
+
+ // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"       "15"    // Physical protection.
+    "MagicalResistance"       "0"     // Magical protection.
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+    "AttackDamageMin"     "0"     // Damage range min.
+    "AttackDamageMax"     "0"     // Damage range max.
+    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"        "0"     // Speed of attack.
+    "AttackAnimationPoint"    "0"     // Normalized time in animation cycle to attack.
+    "AttackAcquisitionRange"  "0"     // Range within a target can be acquired.
+    "AttackRange"       "0"     // Range within a target can be attacked.
+    "ProjectileModel"     ""      // Particle system model for projectile.
+    "ProjectileSpeed"     "0"     // Speed of projectile.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"        "2200"    // Base health.
+    "StatusHealthRegen"     "5"   // Health regeneration rate.
+    "StatusMana"        "0"     // Base mana.
+    "StatusManaRegen"     "0"     // Mana regeneration rate.
+
+    // Attributes
+    //----------------------------------------------------------------
+    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "0"     // Base strength
+    "AttributeStrengthGain"   "0"     // Strength bonus per level.
+    "AttributeBaseIntelligence" "0"     // Base intelligence
+    "AttributeIntelligenceGain" "0"     // Intelligence bonus per level.
+    "AttributeBaseAgility"    "0"     // Base agility
+    "AttributeAgilityGain"    "0"     // Agility bonus per level.
+
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyGoldMin"       "0"   // Gold earned min.
+    "BountyGoldMax"       "0"   // Gold earned max.
+
+
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_NONE"     // Type of locomotion - ground, air
+    "MovementSpeed"       "0"     // Speed
+    "MovementTurnRate"      "0"     // Turning rate.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusMana"        "0"     // Base mana.
+    "StatusManaRegen"     "0"     // Mana regeneration rate.
+
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BARRACKS"
+    
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"    "900"   // Range of vision during day light.
+    "VisionNighttimeRange"    "600"   // Range of vision at night time.
+
+    // Bots
+    //----------------------------------------------------------------
+    "AttackDesire"        "1.5"   // How much bots want to attack them vs other non-hero things
+    
+    //Inventory
+    "HasInventory"        "1"
+    "WakesNeutrals"       "0"
+  } 
+
+"npc_iron_mine_build1"
+  {
+    // General
+    //
+    "BaseClass"         "npc_dota_creature" // Class of entity of link to.
+    "Model"           "models/mine_cart.vmdl"  // Model.
+    //"BaseClass"         "npc_dota_creep_neutral"
+
+    "SoundSet"          "Creep_Good_Melee"
+    //"Level"           "1"
+    "ModelScale"        "50"
+    "HealthBarOffset"     "250"
+    
+    // Abilities
+    //----------------------------------------------------------------
+    
+    "Ability1"          "iron_mining"     // Ability 1.
+    "Ability2"          ""      // Ability 2.
+    "Ability3"          ""      // Ability 3.
+    "Ability4"          ""      // Ability 4.
+    "Ability5"          ""      // Ability 5.
+    "Ability6"          ""      // Ability 6 - Extra.
+    "Ability7"          ""      // Ability 7 - Extra.
+    "Ability8"          ""      // Ability 8 - Extra.
+
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"       "15"    // Physical protection.
+    "MagicalResistance"       "0"     // Magical protection.
+
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+    "AttackDamageMin"     "0"     // Damage range min.
+    "AttackDamageMax"     "0"     // Damage range max.
+    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"        "0"     // Speed of attack.
+    "AttackAnimationPoint"    "0"     // Normalized time in animation cycle to attack.
+    "AttackAcquisitionRange"  "0"     // Range within a target can be acquired.
+    "AttackRange"       "0"     // Range within a target can be attacked.
+    "ProjectileModel"     ""      // Particle system model for projectile.
+    "ProjectileSpeed"     "0"     // Speed of projectile.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"        "2200"    // Base health.
+    "StatusHealthRegen"     "5"   // Health regeneration rate.
+    "StatusMana"        "0"     // Base mana.
+    "StatusManaRegen"     "0"     // Mana regeneration rate.
+
+    // Attributes
+    //----------------------------------------------------------------
+    "AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"   "0"     // Base strength
+    "AttributeStrengthGain"   "0"     // Strength bonus per level.
+    "AttributeBaseIntelligence" "0"     // Base intelligence
+    "AttributeIntelligenceGain" "0"     // Intelligence bonus per level.
+    "AttributeBaseAgility"    "0"     // Base agility
+    "AttributeAgilityGain"    "0"     // Agility bonus per level.
+
+
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyGoldMin"       "0"   // Gold earned min.
+    "BountyGoldMax"       "0"   // Gold earned max.
+
+
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_NONE"     // Type of locomotion - ground, air
+    "MovementSpeed"       "0"     // Speed
+    "MovementTurnRate"      "0"     // Turning rate.
+
+    // Status
+    //----------------------------------------------------------------
+    "StatusMana"        "0"     // Base mana.
+    "StatusManaRegen"     "0"     // Mana regeneration rate.
+
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"          "DOTA_TEAM_GOODGUYS"      // Team name.
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"   "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BARRACKS"
+    
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"    "900"   // Range of vision during day light.
+    "VisionNighttimeRange"    "600"   // Range of vision at night time.
+
+    // Bots
+    //----------------------------------------------------------------
+    "AttackDesire"        "1.5"   // How much bots want to attack them vs other non-hero things
+    
+    //Inventory
+    "HasInventory"        "1"
+  } 
+
+
+//   END
+}
+
