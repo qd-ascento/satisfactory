@@ -9,21 +9,20 @@ ore_mining = class({
 		local caster = self:GetCaster()
 		--if not caster:IsTrueHero() then return end
 		local ability = self
-		local unit = self.GetUnitName()
 		local value = self:GetSpecialValueFor("produce")
 		local time = self:GetSpecialValueFor("time")
 
 		local count = ability:GetLevelSpecialValueFor("produce", ability:GetLevel())
 
-		if unit == ("npc_stone_mine_build1") then
+		--if unit == ("npc_stone_mine_build1") then
 
 			local newItem = CreateItem("item_stone_core", caster, caster)
 
-		elseif unit == ("npc_iron_mine_build1") then
+		--elseif unit == ("npc_iron_mine_build1") then
 
-			local newItem = CreateItem("item_iron_core", caster, caster)
+			--local newItem = CreateItem("item_iron_core", caster, caster)
 
-		end
+		--end
 
 			for i=0,count-1 do
 			caster:AddItem(newItem)

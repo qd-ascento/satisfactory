@@ -120,7 +120,7 @@
     // Abilities
     //----------------------------------------------------------------
     
-    "Ability1"          "stone_mining"     // Ability 1.
+    "Ability1"          "ore_mining"     // Ability 1.
     "Ability2"          "auto_sell"      // Ability 2.
     "Ability3"          ""      // Ability 3.
     "Ability4"          ""      // Ability 4.
